@@ -1,0 +1,29 @@
+{
+  "name": "clarion-playwright",
+  "version": "1.0.0",
+  "description": "Playwright with Mocha,Typescript Framework",
+  "main": "index.js",
+  "scripts": {
+    "e2e:website:user:management": "mocha  test/specs/UserManagement/*.ts"
+  },
+  "keywords": [
+    "playwright",
+    "mocha",
+    "typescript"
+  ],
+  "author": "Swapnil Naidu",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/mocha": "^8.2.2",
+    "chai": "^4.3.4",
+    "dotenv": "^10.0.0",
+    "faker": "^5.5.3",
+    "mocha": "^8.4.0",
+    "playwright": "^1.11.1",
+    "ts-node": "^10.0.0",
+    "typescript": "^4.3.2"
+  },
+  "dependencies": {
+    "@types/faker": "^5.5.6"
+  }
+}

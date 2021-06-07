@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+      "target": "ES2019",
+      "module": "commonjs",
+      "lib": ["esnext", "dom", "DOM.Iterable"],
+      "sourceMap": true,
+      "esModuleInterop": true,
+      "rootDir": "./tests/**/*.ts",
+      "strict": true,
+      "allowJs": true,
+      "declaration": false,
+      "downlevelIteration": true,
+      "resolveJsonModule": true,
+      "noImplicitAny": false
+    },
+    "include": ["tests/**/*.ts","pageObjects/*.*"],
+    "exclude": ["node_modules"]
+  }
