@@ -15,6 +15,7 @@ export default class UserManagementMethods {
         await this.loginPage.enterSignUpPassword(randomDataSet.USER_PASSWORD);
         await this.loginPage.selectNoThanksPromo();
         await this.loginPage.clickSignupButton();
+        await this.page.waitForNavigation();
     }
 
     async userLogin(username:string,password:string):Promise<void>{

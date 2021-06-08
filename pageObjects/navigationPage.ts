@@ -14,6 +14,8 @@ export default class NavigationPage {
   searchNavLink = "div.desktop-search-container > a";
   loginNavLink = "#login-link";
   wishlistNavLink = "nav.header-nav.header-nav-right > ul >li:nth-child(3) > a";
+  accountsNavLink = "#account-link";
+  accountsSubNavLink = "#account-menu-account-link";
   /**
    * #############################  Methods ################################
    */
@@ -44,5 +46,14 @@ export default class NavigationPage {
 
   async clickOnWishlistNavLink():Promise<void> {
     await this.page.click(this.wishlistNavLink);
+  }
+
+  async clickOnAccountsNavLink():Promise<void> {
+    await this.page.hover(this.accountsNavLink);
+    await this.page.click(this.accountsNavLink);
+  }
+
+  async clickOnAccountsSubNavLink():Promise<void> {
+    await this.page.click(this.accountsSubNavLink);
   }
 }
