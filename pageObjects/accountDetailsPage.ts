@@ -19,7 +19,7 @@ export default class AccountDetails {
    * ################################### Methods ########################################
    */
    async  getEmailAddress():Promise<string> {
-       const elementVal:any = await this.page.$eval(this.emailAddress, (el) => el.nodeValue);
-       return elementVal;
+    const elementVal:any = await this.page.$eval('#account-details-email',(el:any)=> <HTMLInputElement>el.value);
+    return elementVal;
    }
 }
